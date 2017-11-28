@@ -4,7 +4,7 @@ struct ConvexHullTrick {
 	bool increasing_slope, need_tenary;
 	int curit;
 	// this code was set to find maximum value with increasing (or decreasing) slope
-	// if you want to find minimum value, modify the sign at all position with "flip" mark
+	// if you want to find minimum value, follow the guide and modify the code
 	// initiate before using
 	bool bad(int l1, int l2, int l3) {
 		if (increasing_slope)
