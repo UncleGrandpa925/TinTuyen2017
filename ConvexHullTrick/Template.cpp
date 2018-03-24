@@ -8,8 +8,8 @@ struct ConvexHullTrick {
 	// initiate before using
 	bool bad(int l1, int l2, int l3) {
 		if (increasing_slope)
-			return (B[l3] - B[l1]) * (A[l1] - A[l2]) < (A[l1] - A[l3]) * (B[l2] - B[l1]);
-		return (B[l3] - B[l1]) * (A[l1] - A[l2]) > (A[l1] - A[l3]) * (B[l2] - B[l1]);
+			return (B[l3] - B[l1]) * (A[l1] - A[l2]) > (A[l1] - A[l3]) * (B[l2] - B[l1]);
+		return (B[l3] - B[l1]) * (A[l1] - A[l2]) < (A[l1] - A[l3]) * (B[l2] - B[l1]);
 	}
 	// if increasing_slope is false, then the lines' slope must be decreasing and vice versa
 	// need_tenary should be set to true if the query value is not icreasing (or decreasing), otherwise set no false
